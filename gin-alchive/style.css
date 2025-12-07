@@ -1,0 +1,268 @@
+/* ベース */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 24px 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+  background: radial-gradient(circle at top, #111827 0, #020617 40%, #020617 100%);
+  color: #111827;
+}
+
+.app {
+  max-width: 420px;
+  margin: 0 auto;
+}
+
+/* カード共通 */
+.card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 16px 18px 20px;
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.35);
+  margin: 12px 16px;
+}
+
+/* 検索カード */
+.app-title {
+  margin: 0 0 12px;
+  font-size: 22px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.field-label {
+  font-size: 13px;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.search-row {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.search-row input {
+  flex: 1;
+}
+
+.search-subrow {
+  margin-bottom: 4px;
+}
+
+input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  font-size: 14px;
+  outline: none;
+}
+
+input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 1px rgba(37, 99, 235, 0.25);
+}
+
+/* ボタン */
+.btn {
+  border-radius: 999px;
+  padding: 10px 14px;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.btn.primary {
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  color: #fff;
+}
+
+.btn.secondary {
+  background: #f3f4f6;
+  color: #111827;
+}
+
+.btn.ghost {
+  background: #f9fafb;
+  color: #111827;
+  border: 1px solid #e5e7eb;
+}
+
+.btn:active {
+  transform: translateY(1px);
+}
+
+/* ステータス */
+.status-text {
+  font-size: 12px;
+  color: #4b5563;
+  margin: 4px 0 0;
+}
+
+/* ジンカード */
+.gin-card {
+  padding-top: 14px;
+}
+
+.gin-header {
+  display: flex;
+  gap: 12px;
+  align-items: stretch;
+  margin-bottom: 10px;
+}
+
+.gin-title-block {
+  flex: 1;
+}
+
+.gin-label {
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #9ca3af;
+  margin: 0 0 4px;
+}
+
+.gin-name {
+  margin: 0 0 6px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.gin-meta {
+  margin: 0;
+  font-size: 13px;
+  color: #4b5563;
+}
+
+.gin-image-wrap {
+  width: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gin-image-wrap img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+/* 本文 */
+.gin-body {
+  margin-top: 4px;
+}
+
+.gin-description {
+  font-size: 13px;
+  color: #374151;
+  line-height: 1.6;
+  background: #f9fafb;
+  padding: 10px 12px;
+  border-radius: 10px;
+}
+
+.gin-section {
+  margin-top: 14px;
+}
+
+.gin-section h3 {
+  margin: 0 0 6px;
+  font-size: 14px;
+}
+
+.botanical-text {
+  font-size: 13px;
+  color: #374151;
+}
+
+/* 味わいバー */
+.flavor-row {
+  display: flex;
+  align-items: center;
+  margin: 4px 0;
+  gap: 8px;
+  font-size: 12px;
+}
+
+.flavor-label {
+  width: 60px;
+}
+
+.flavor-bar-container {
+  flex: 1;
+  height: 8px;
+  background: #e5e7eb;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.flavor-bar {
+  height: 100%;
+  background: #22c55e;
+  border-radius: 999px;
+}
+
+/* 星 */
+.stars span {
+  font-size: 24px;
+  cursor: pointer;
+  color: #e5e7eb;
+}
+
+.stars span.active {
+  color: #facc15;
+}
+
+/* テキストエリア */
+textarea {
+  width: 100%;
+  min-height: 70px;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  padding: 8px 10px;
+  font-size: 13px;
+  resize: vertical;
+}
+
+textarea:focus {
+  border-color: #2563eb;
+  outline: none;
+  box-shadow: 0 0 0 1px rgba(37, 99, 235, 0.2);
+}
+
+.sub-text {
+  font-size: 11px;
+  color: #6b7280;
+  margin: 6px 0 0;
+}
+
+/* 履歴・図鑑 */
+.section-title {
+  margin: 0 0 4px;
+  font-size: 16px;
+}
+
+.history-list,
+.collection-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 8px 0 0;
+}
+
+.history-list li,
+.collection-list li {
+  font-size: 13px;
+  padding: 4px 0;
+  border-bottom: 1px dashed #e5e7eb;
+}
+
+.hidden {
+  display: none;
+}
