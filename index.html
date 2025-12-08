@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alchive Gin App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <!-- 検索カード -->
+    <section class="card search-card">
+      <h1 class="app-title">Alchive Gin</h1>
+      <label class="field-label" for="janInput">JANコード検索</label>
+      <div class="search-row">
+        <input id="janInput" type="text" placeholder="JANコードを入力" />
+        <button id="searchBtn" class="btn primary">検索</button>
+      </div>
+      <div class="search-subrow">
+        <button id="cameraBtn" class="btn ghost">📷 カメラで読み取る（ダミー）</button>
+      </div>
+      <p id="scanStatus" class="status-text"></p>
+    </section>
+
+    <!-- ジン詳細 -->
+    <section id="ginDetailCard" class="card gin-card hidden">
+      <header class="gin-header">
+        <div class="gin-title-block">
+          <p class="gin-label">ジン情報</p>
+          <h2 id="ginName" class="gin-name">ジン名</h2>
+          <p id="ginMeta" class="gin-meta">原産国・度数など</p>
+        </div>
+        <div class="gin-image-wrap">
+          <img id="ginImage" src="" alt="ボトル画像" />
+        </div>
+      </header>
+
+      <div class="gin-body">
+        <p id="ginDescription" class="gin-description">
+          説明文がここに表示されます。
+        </p>
+
+        <div class="gin-section">
+          <h3>ボタニカル</h3>
+          <p id="ginBotanicals" class="botanical-text">-</p>
+        </div>
+
+        <div class="gin-section">
+          <h3>味わいの特徴（一般）</h3>
+          <div id="flavorBars"></div>
+        </div>
+
+        <div class="gin-section">
+          <h3>一般評価</h3>
+          <p id="ginRatingGeneral">★★★☆☆</p>
+        </div>
+
+        <div class="gin-section">
+          <h3>あなたの評価</h3>
+          <div id="userRatingStars" class="stars"></div>
+        </div>
+
+        <div class="gin-section">
+          <h3>テイスティングメモ</h3>
+          <textarea id="tastingMemo" placeholder="ここにメモを書けます。"></textarea>
+          <button id="saveMemoBtn" class="btn secondary">メモを保存</button>
+          <p id="lastMemoInfo" class="sub-text"></p>
+        </div>
+
+        <div class="gin-section">
+          <h3>飲んだ！</h3>
+          <button id="addDrinkLogBtn" class="btn primary">このジンを飲んだと記録</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 飲んだ履歴 -->
+    <section class="card">
+      <h2 class="section-title">飲んだ履歴（自動追加）</h2>
+      <p id="lastDrinkInfo" class="sub-text">まだ記録がありません。</p>
+      <ul id="drinkHistoryList" class="history-list"></ul>
+    </section>
+
+    <!-- 図鑑 -->
+    <section class="card">
+      <h2 class="section-title">図鑑</h2>
+      <p id="collectionSummary" class="sub-text"></p>
+      <ul id="collectionList" class="collection-list"></ul>
+    </section>
+  </div>
+
+  <script src="gin_db.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
