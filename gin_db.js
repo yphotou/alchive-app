@@ -290,5 +290,5 @@ const GIN_DB = {
   }
 };
 
-export default GIN_DB;
+;
 
