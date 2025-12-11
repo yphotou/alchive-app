@@ -237,8 +237,8 @@ const GIN_DB = {
     tags: "Luxury",
     status: "Limited"
   },
-  "4589633900162": {
-    barcode: "4589633900162",
+  "4589633900858": {
+    barcode: "4589633900858",
     bottle_id: 12,
     name_jp: "季の美 GO 京都ドライジン",
     name_en: "KI NO BI GO Kyoto Dry Gin",
