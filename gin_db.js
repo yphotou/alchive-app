@@ -3,128 +3,292 @@
 // ここに銘柄をどんどん追加していく
 
 const GIN_DB = {
-  // ボンベイ・サファイア
-  "4901411049895": {
-    id: "4901411049895",
-    barcode: "4901411049895",
-    type: "gin",
-
-    name_jp: "ボンベイ・サファイア",
-    name_en: "Bombay Sapphire",
-    brand: "Bombay",
-    country: "イギリス",
-    region: "ロンドン",
-
+  "4589633900018": {
+    barcode: "4589633900018",
+    bottle_id: 1,
+    name_jp: "季の美 京都ドライジン",
+    name_en: "KI NO BI Kyoto Dry Gin",
+    brand: "KI NO BI",
+    producer: "The Kyoto Distillery",
+    category: "Gin",
+    country: "Japan",
+    region: "Kyoto",
+    abv: 45,
+    volume_ml: 700,
+    description_short: "京都のボタニカルを6つのエレメントに分けて蒸溜・ブレンドしたスタンダードボトル。",
+    gin_base: "Rice Spirit",
+    gin_style: "Dry Gin",
+    botanicals: "Yuzu, Lemon, Sansho, Ginger, Gyokuro, Bamboo, Red Shiso, Juniper, Orris, Hinoki, Kinome",
+    distillation_method: "Blended",
+    flavor_sweet: 2,
+    flavor_acid: 4,
+    flavor_bitter: 3,
+    flavor_spice: 4,
+    flavor_fresh: 5,
+    image: "https://kyotodistillery.jp/products/item1.php",
+    tags: "Standard",
+    status: "Active"
+  },
+  "4589633900162": {
+    barcode: "4589633900162",
+    bottle_id: 2,
+    name_jp: "季の美 勢 京都ドライジン",
+    name_en: "KI NO BI SEI Kyoto Dry Gin",
+    brand: "KI NO BI",
+    producer: "The Kyoto Distillery",
+    category: "Gin",
+    country: "Japan",
+    region: "Kyoto",
+    abv: 54,
+    volume_ml: 700,
+    description_short: "季の美と同じ11種のボタニカルを使い高アルコール度数で力強い味わいに仕上げた一本。",
+    gin_base: "Rice Spirit",
+    gin_style: "Navy Strength",
+    botanicals: "Yuzu, Lemon, Sansho, Ginger, Gyokuro, Bamboo, Red Shiso, Juniper, Orris, Hinoki, Kinome",
+    distillation_method: "Blended",
+    flavor_sweet: 2,
+    flavor_acid: 4,
+    flavor_bitter: 3,
+    flavor_spice: 5,
+    flavor_fresh: 4,
+    image: "https://kyotodistillery.jp/products/item3.php",
+    tags: "High Proof",
+    status: "Active"
+  },
+  "4589633900148": {
+    barcode: "4589633900148",
+    bottle_id: 3,
+    name_jp: "季のTEA 京都ドライジン",
+    name_en: "KI NO TEA Kyoto Dry Gin",
+    brand: "KI NO BI",
+    producer: "The Kyoto Distillery",
+    category: "Gin",
+    country: "Japan",
+    region: "Kyoto",
+    abv: 45,
+    volume_ml: 700,
+    description_short: "玉露と碾茶をふんだんに使用しホワイトチョコレートのような甘い香りが特徴。",
+    gin_base: "Rice Spirit",
+    gin_style: "Tea Gin",
+    botanicals: "Gyokuro, Tencha, Juniper, etc.",
+    distillation_method: "Blended",
+    flavor_sweet: 4,
+    flavor_acid: 2,
+    flavor_bitter: 3,
+    flavor_spice: 2,
+    flavor_fresh: 3,
+    image: "https://kyotodistillery.jp/products/item2.php",
+    tags: "Tea",
+    status: "Active"
+  },
+  "4589633900209": {
+    barcode: "4589633900209",
+    bottle_id: 4,
+    name_jp: "季の糖島 京都オールドトムジン",
+    name_en: "KI NO TOU Kyoto Old Tom Gin",
+    brand: "KI NO BI",
+    producer: "The Kyoto Distillery",
+    category: "Gin",
+    country: "Japan",
+    region: "Kyoto",
     abv: 47,
     volume_ml: 700,
-
-    // ショート説明（一覧や上部に表示用）
-    description_short: "クリアで洗練された味わい。",
-
-    // くわしい説明（今は1行でもOK）
-    description:
-      "クリアで洗練された味わい。柑橘とジュニパーのバランスが良く、カクテルベースとしても定番の1本。",
-
-    // ジン固有情報
-    gin_base: "グレーンスピリッツ",
-    gin_style: "ロンドンドライ",
-    botanicals: ["ジュニパー", "レモンピール", "アンジェリカルート"],
-    distillation_method: "連続蒸留＋再蒸留",
-
-    // 味チャート（0〜5）
-    flavor: {
-      sweet: 2,
-      acid: 2,
-      bitter: 3,
-      spice: 2,
-      fresh: 4
-    },
-
-    // 一般評価（仮の値）
-    rating: 3, // ★★★☆☆
-
-    // 画像ファイル名
-    image: "4901411049895.jpg",
-
-    tags: ["クラシック", "ロンドンドライ", "カクテル向き"]
+    description_short: "与那国島の黒糖を加えたオールドトム・スタイル。コクのある甘みと複雑な味わい。",
+    gin_base: "Rice Spirit",
+    gin_style: "Old Tom",
+    botanicals: "Brown Sugar, Juniper, Yuzu, etc.",
+    distillation_method: "Blended",
+    flavor_sweet: 5,
+    flavor_acid: 3,
+    flavor_bitter: 2,
+    flavor_spice: 3,
+    flavor_fresh: 3,
+    image: "https://kyotodistillery.jp/products/item4.php",
+    tags: "Sweet",
+    status: "Active"
   },
-
-  // 翠 -SUI-
-  "4901777301234": {
-    id: "4901777301234",
-    barcode: "4901777301234",
-    type: "gin",
-
-    name_jp: "翠 -SUI-",
-    name_en: "SUI Japanese Gin",
-    brand: "Suntory",
-    country: "日本",
-    region: "日本",
-
-    abv: 40,
+  "4589633900674": {
+    barcode: "4589633900674",
+    bottle_id: 5,
+    name_jp: "季の梅 京都プラムアンドベリーリキュール",
+    name_en: "KI NO BAI Kyoto Plum and Berry Liqueur",
+    brand: "KI NO BI",
+    producer: "The Kyoto Distillery",
+    category: "Liqueur",
+    country: "Japan",
+    region: "Kyoto",
+    abv: 29.5,
     volume_ml: 700,
-
-    description_short: "日本人に飲みやすい爽やかなジン。",
-    description:
-      "柚子・緑茶・生姜などの和素材を使ったジャパニーズジン。爽やかでソーダ割りでも飲みやすい1本。",
-
-    gin_base: "グレーンスピリッツ",
-    gin_style: "日本風ジン",
-    botanicals: ["ジュニパー", "柚子", "緑茶", "生姜"],
-    distillation_method: "単式蒸留（一部素材別蒸留）",
-
-    flavor: {
-      sweet: 2,
-      acid: 3,
-      bitter: 2,
-      spice: 2,
-      fresh: 4
-    },
-
-    rating: 4, // ★★★★☆
-
-    image: "sui.jpg",
-
-    tags: ["ジャパニーズジン", "爽やか", "ソーダ割り向き"]
+    description_short: "旬の北海道産ハスカップと京都産梅を漬け込んだリキュール。",
+    gin_base: "Rice Spirit",
+    gin_style: "Liqueur",
+    botanicals: "Plum (Ume), Haskap Berry, Sugar",
+    distillation_method: "Infused",
+    flavor_sweet: 5,
+    flavor_acid: 5,
+    flavor_bitter: 1,
+    flavor_spice: 1,
+    flavor_fresh: 3,
+    image: "https://kyotodistillery.jp/products/item5.php",
+    tags: "Fruit",
+    status: "Active"
   },
-
-    // HOLON GIN Original
-  "1234567890123": {
-    id: "1234567890123",          // ← 本物のJANに変えたらここも同じ値に
-    barcode: "1234567890123",
-    type: "gin",
-
-    name_jp: "HOLON GIN Original",
-    name_en: "HOLON GIN Original",
-    brand: "HOLON",
-    country: "日本",
-    region: "東京",
-
-    abv: 40,
+  "4589633900575": {
+    barcode: "4589633900575",
+    bottle_id: 6,
+    name_jp: "金の美 京都ドライジン",
+    name_en: "KIN NO BI Kyoto Dry Gin",
+    brand: "KI NO BI",
+    producer: "The Kyoto Distillery",
+    category: "Gin",
+    country: "Japan",
+    region: "Kyoto",
+    abv: 45,
     volume_ml: 700,
-
-    description_short: "ハーバルでやわらかなジャパニーズクラフトジン。",
-    description:
-      "柑橘とハーブが穏やかに広がる、やわらかなジャパニーズクラフトジン。ソーダ割りやトニックで飲みやすく、食中にも合わせやすい1本。",
-
-    gin_base: "グレーンスピリッツ",
-    gin_style: "コンテンポラリー・ジン",
-    botanicals: ["ジュニパー", "柚子", "ハーブ", "ボタニカル"],
-    distillation_method: "単式蒸留",
-
-    flavor: {
-      sweet: 2,
-      acid: 2,
-      bitter: 2,
-      spice: 3,
-      fresh: 4
-    },
-
-    rating: 4, // 仮で★★★☆☆〜★★★★☆くらいにしてる
-
-    image: "holon_original.jpg",
-
-    tags: ["ジャパニーズジン", "クラフト", "ハーバル"]
+    description_short: "金箔入りの祝賀用ボトル。中身はスタンダードの季の美と同様。",
+    gin_base: "Rice Spirit",
+    gin_style: "Dry Gin",
+    botanicals: "Yuzu, Lemon, Sansho, Ginger, Gyokuro, Bamboo, Red Shiso, Juniper, Orris, Hinoki, Kinome, Gold Leaf",
+    distillation_method: "Blended",
+    flavor_sweet: 2,
+    flavor_acid: 4,
+    flavor_bitter: 3,
+    flavor_spice: 4,
+    flavor_fresh: 5,
+    image: "https://kyotodistillery.jp/products/item6.php",
+    tags: "Gold Leaf",
+    status: "Active"
+  },
+  "4589633900261": {
+    barcode: "4589633900261",
+    bottle_id: 7,
+    name_jp: "季の美 エディションG",
+    name_en: "KI NO BI Edition G",
+    brand: "KI NO BI",
+    producer: "The Kyoto Distillery",
+    category: "Gin",
+    country: "Japan",
+    region: "Kyoto",
+    abv: 48,
+    volume_ml: 700,
+    description_short: "アンリ・ジローのシャンパーニュ樽で熟成させた限定品。",
+    gin_base: "Rice Spirit",
+    gin_style: "Cask Aged",
+    botanicals: "Juniper, Yuzu, Gyokuro, etc.",
+    distillation_method: "Pot Still & Cask",
+    flavor_sweet: 3,
+    flavor_acid: 4,
+    flavor_bitter: 3,
+    flavor_spice: 3,
+    flavor_fresh: 4,
+    image: "https://kyotodistillery.jp/products/item8.php",
+    tags: "Champagne Cask",
+    status: "Limited"
+  },
+  "4589633900469": {
+    barcode: "4589633900469",
+    bottle_id: 8,
+    name_jp: "季の美 エディションK",
+    name_en: "KI NO BI Edition K",
+    brand: "KI NO BI",
+    producer: "The Kyoto Distillery",
+    category: "Gin",
+    country: "Japan",
+    region: "Kyoto",
+    abv: 46,
+    volume_ml: 700,
+    description_short: "スモーキーなシングルモルト（キルホーマン等）の樽で熟成させた限定品。",
+    gin_base: "Rice Spirit",
+    gin_style: "Cask Aged",
+    botanicals: "Juniper, Yuzu, Gyokuro, etc.",
+    distillation_method: "Pot Still & Cask",
+    flavor_sweet: 2,
+    flavor_acid: 3,
+    flavor_bitter: 4,
+    flavor_spice: 4,
+    flavor_fresh: 3,
+    image: "https://kyotodistillery.jp/products/item9.php",
+    tags: "Smoke Cask",
+    status: "Limited"
+  },
+  "4589633900452": {
+    barcode: "4589633900452",
+    bottle_id: 9,
+    name_jp: "季の珠 京都ジン Series 1『玉露』",
+    name_en: "KI NO JU Kyoto Gin Series 1 Gyokuro",
+    brand: "KI NO BI",
+    producer: "The Kyoto Distillery",
+    category: "Gin",
+    country: "Japan",
+    region: "Kyoto",
+    abv: 47,
+    volume_ml: 700,
+    description_short: "最高級の玉露をふんだんに使用した超限定プレミアムジン。",
+    gin_base: "Rice Spirit",
+    gin_style: "Premium Gin",
+    botanicals: "Gyokuro (Okumidori), Juniper, etc.",
+    distillation_method: "Blended",
+    flavor_sweet: 4,
+    flavor_acid: 2,
+    flavor_bitter: 4,
+    flavor_spice: 2,
+    flavor_fresh: 4,
+    image: "https://kyotodistillery.jp/products/item7.php",
+    tags: "Luxury",
+    status: "Limited"
+  },
+  "4589633900162": {
+    barcode: "4589633900162",
+    bottle_id: 12,
+    name_jp: "季の美 GO 京都ドライジン",
+    name_en: "KI NO BI GO Kyoto Dry Gin",
+    brand: "KI NO BI",
+    producer: "The Kyoto Distillery",
+    category: "Gin",
+    country: "Japan",
+    region: "Kyoto",
+    abv: 50,
+    volume_ml: 700,
+    description_short: "5周年記念ボトル。檜の代わりに赤松を使用し度数50%でボトリング。",
+    gin_base: "Rice Spirit",
+    gin_style: "Dry Gin",
+    botanicals: "Red Pine (Akamatsu), Yuzu, Ginger, Gyokuro",
+    distillation_method: "Blended",
+    flavor_sweet: 2,
+    flavor_acid: 4,
+    flavor_bitter: 3,
+    flavor_spice: 4,
+    flavor_fresh: 5,
+    image: "https://kyotodistillery.jp/products/item86.php",
+    tags: "Anniversary",
+    status: "Limited"
+  },
+  "110000026": {
+    barcode: "110000026",
+    bottle_id: 28,
+    name_jp: "季能美 15th Edition – 顰（しかみ）",
+    name_en: "KI NOH BI 15th Edition - Shikami",
+    brand: "KI NOH BI",
+    producer: "The Kyoto Distillery",
+    category: "Gin",
+    country: "Japan",
+    region: "Kyoto",
+    abv: 48,
+    volume_ml: 700,
+    description_short: "DFS限定品。バニラ塩キャラメルの香り。",
+    gin_base: "Rice Spirit",
+    gin_style: "Cask Aged",
+    distillation_method: "Pot Still & Cask",
+    flavor_sweet: 4,
+    flavor_acid: 3,
+    flavor_bitter: 3,
+    flavor_spice: 3,
+    flavor_fresh: 2,
+    image: "https://kyotodistillery.jp/products/item25.php",
+    tags: "Cask Aged",
+    status: "Limited"
   }
-
 };
+
+export default GIN_DB;
+
